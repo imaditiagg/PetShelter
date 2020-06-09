@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:iconTint="#000000"
+            android:id="@+id/rescuePet"
+            android:icon="@drawable/pawprint"
+            android:title="Rescue pet" />
+        <item
+            android:id="@+id/adoptPet"
+            android:icon="@drawable/doghouse"
+            android:title="Adopt pet" />
+        <item
+            android:id="@+id/addPet"
+            android:icon="@drawable/dog"
+            android:title="Sell pet"/>
+
+        <item
+            android:id="@+id/myPet"
+            android:icon="@drawable/walkingdog"
+            android:title="My pets" />
+
+        <item
+            android:id="@+id/myProfile"
+            android:icon="@drawable/user"
+            android:title="My profile"/>
+
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About" />
+            <item
+                android:id="@+id/deleteAccount"
+                android:icon="@drawable/delete"
+                android:title="Delete Account" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+
+
+        </menu>
+    </item>
+
+</menu>

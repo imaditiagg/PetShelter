@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/search_result_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myposts_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        tools:context=".All_BooksFragment">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_gravity="center"
+                android:id="@+id/activity_posts_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lottie_fileName="loader.json"
+                app:lottie_loop="true"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+
+                android:id="@+id/postsrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="160dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/post_item_not_found_view"
+                    android:layout_width="match_parent"
+                    android:text="You have not added any pet yet. Add Pet now by clicking on '+' icon on bottom right."
+                    android:visibility="gone"
+                    android:layout_margin="15dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/MyPostsFab"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

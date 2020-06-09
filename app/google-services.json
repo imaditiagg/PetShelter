@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1005646322528",
+    "firebase_url": "https://petshelter-4e61e.firebaseio.com",
+    "project_id": "petshelter-4e61e",
+    "storage_bucket": "petshelter-4e61e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005646322528:android:adb66a86eb993955",
+        "android_client_info": {
+          "package_name": "com.example.aditi.petshelter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005646322528-q2trg60qi2fk3q8hj2jgjv1ue65e4sut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aditi.petshelter",
+            "certificate_hash": "d7688b1937bd0879f059f5eecd7d007e48e5aa8b"
+          }
+        },
+        {
+          "client_id": "1005646322528-lhi1190ap28ii90jg8p4mpujjes93i25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjMOF5NWKjmOkkbq8Mwn8xN2b3hau7yD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005646322528-lhi1190ap28ii90jg8p4mpujjes93i25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="40dp"></corners>
+            <gradient
+                android:endColor="#b3b3b3"
+                android:gradientRadius="300dp"
+                android:startColor="#999999"
+                android:type="radial" />
+        </shape>
+    </item>
+
+    <item
+        android:width="50dp"
+        android:height="50dp"
+        android:top="5dp"
+        android:left="5dp"
+        android:drawable="@drawable/ic_message_red_800_24dp"
+        >
+
+    </item>
+</layer-list>

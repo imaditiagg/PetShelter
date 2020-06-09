@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+
+                    android:id="@+id/profile"
+                    android:layout_width="137dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="140dp"
+                    android:src="@drawable/profile1"
+                    android:layout_marginStart="24dp"
+                    android:elevation="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:typeface="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/color2"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name *"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="@color/color2"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:hint="Enter name"
+                android:background="@drawable/edittext_bg2"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email *"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="@color/color2"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/editemail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:typeface="serif"
+                android:enabled="false"
+                android:background="@drawable/edittext_bg2"
+                android:hint="abc@gmail.com"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Password *"
+                android:textStyle="bold"
+                android:textColor="@color/color2"
+                android:textSize="20sp"
+                android:typeface="serif"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editpass"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="5"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:background="@drawable/edittext_bg2"
+                    android:hint="..............."
+                    android:typeface="serif"
+                    android:inputType="textPassword"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:onClick="pass"
+                    android:id="@+id/changepass"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/password"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact *"
+
+                android:textStyle="bold"
+                android:textColor="@color/color2"
+                android:textSize="20sp"
+                android:typeface="serif"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/editcontact"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:typeface="serif"
+                android:background="@drawable/edittext_bg2"
+                android:inputType="number" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select State *"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="@color/color2"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Spinner
+                android:id="@+id/profile_state_spinner"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textSize="20sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City *"
+                android:textStyle="bold"
+                android:textColor="@color/color2"
+                android:textSize="20sp"
+                android:typeface="serif"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/editcity"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:hint=""
+                android:typeface="serif"
+                android:background="@drawable/edittext_bg2"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pin code *"
+                android:textStyle="bold"
+                android:textColor="@color/color2"
+                android:textSize="20sp"
+                android:typeface="serif"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/editpin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg2"
+                android:hint=""
+                android:typeface="serif"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/save"
+                android:text="SAVE"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            android:id="@+id/profile_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_fileName="spinner.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+    </FrameLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

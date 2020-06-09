@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="40dp"></corners>
+           <stroke android:color="#002db3" android:width="1dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:width="50dp"
+        android:height="45dp"
+        android:drawable="@drawable/call2"
+        >
+
+    </item>
+</layer-list>

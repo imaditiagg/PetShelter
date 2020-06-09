@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/pic8"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/color1"
+                    android:layout_weight="7"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="130dp">
+                    <TextView
+                        android:typeface="serif"
+                        android:text="Pet Category *"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/category"
+                        android:hint="e.g Dog"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext_bg2"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" />
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="130dp">
+
+                    <ImageView
+                        android:typeface="serif"
+                        android:scaleType="fitXY"
+                        android:id="@+id/petImage"
+                        android:background="#bfbfbf"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp" />
+
+                    <TextView
+                        android:id="@+id/addPhotoTextView"
+                        android:textStyle="italic|bold"
+                        android:layout_gravity="center"
+                        android:text="Add photo"
+                        android:layout_width="40dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/color2"
+                        android:layout_height="wrap_content" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/color1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:typeface="serif"
+                    android:text="Pet Name *"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/name"
+                    android:hint="e.g oscar"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_bg2"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/color1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:typeface="serif"
+                    android:text="Species"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/species"
+                    android:hint="e.g Affenpinscher"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_bg2"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/color1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="80dp">
+                <TextView
+                    android:text="Gender *"
+                    android:textSize="22sp"
+                    android:typeface="serif"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/radioGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:typeface="serif"
+                        android:onClick="radioGroupClick"
+                        android:textColor="#ffffff"
+                        android:text="Male"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:typeface="serif"
+                        android:onClick="radioGroupClick"
+                        android:textColor="#ffffff"
+                        android:text="Female"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:typeface="serif"
+                android:id="@+id/submitButton"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_bg"
+                android:textSize="23sp"
+                android:textColor="#ffffff"
+                android:text="Done"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            android:id="@+id/addpet_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_fileName="spinner.json"
+            app:lottie_loop="true"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"/>
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>

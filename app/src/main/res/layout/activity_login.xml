@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/login_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverlay" >
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/pet2"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="120dp"
+                tools:context=".HomeActivity">
+                <!--<Button
+                    android:id="@+id/GoogleSignIn"
+                    android:background="@drawable/signup2"
+                    android:layout_width="290dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_gravity="center"
+                    android:layout_height="45dp" />-->
+                <!--<TextView
+                    android:gravity="center"
+                    android:text="OR"
+                    android:typeface="serif"
+                    android:textColor="#4d0019"
+                    android:textSize="16dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="325dp"
+                    android:layout_height="353dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    android:elevation="100dp"
+                    app:cardCornerRadius="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!--<com.google.android.gms.common.SignInButton
+                            android:id="@+id/GoogleSignIn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </com.google.android.gms.common.SignInButton>-->
+
+                        <EditText
+                            android:id="@+id/EmaileditText"
+                            android:layout_width="286dp"
+                            android:layout_height="46dp"
+                            android:layout_margin="30dp"
+                            android:background="@drawable/edittext_bg"
+                            android:hint="Enter E-mail"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:typeface="serif" />
+
+
+                        <EditText
+                            android:id="@+id/PasswordeditText"
+                            android:layout_width="286dp"
+                            android:layout_height="46dp"
+                            android:layout_margin="30dp"
+                            android:background="@drawable/edittext_bg"
+                            android:hint="Enter Password"
+                            android:inputType="textPassword"
+                            android:padding="10dp"
+                            android:typeface="serif" />
+
+                        <Button
+                            android:id="@+id/Loginbutton"
+                            android:layout_width="230dp"
+                            android:layout_height="45dp"
+                            android:layout_margin="30dp"
+                            android:background="@drawable/loginbutton_bg"
+                            android:onClick="LoginClicked"
+                            android:text="Get Started"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:typeface="serif" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+
+                    android:textAlignment="center"
+                    android:typeface="serif"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="SignUpText"
+                        android:text="Not have an account? "
+                        android:textColor="@color/white"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/SignUptextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="SignUpText"
+                        android:text="Sign Up"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_gravity="center"
+                android:id="@+id/signin_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lottie_fileName="spinner.json"
+                app:lottie_loop="true"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"/>
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

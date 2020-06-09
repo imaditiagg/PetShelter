@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/detailsProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="#e6e6e6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal"
+        android:typeface="serif"
+        android:layout_margin="20dp"
+        android:textColor="#000000"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+        </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/locationicon"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_location_on_black_24dp" />
+        <TextView
+            android:id="@+id/address"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:typeface="serif"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/star"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_grade_yellow_800_24dp"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/rating"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:typeface="serif"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/contact"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:typeface="serif"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/call_owner_button"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/call_bg2"
+                android:layout_width="50dp"
+                android:layout_height="45dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/directions"
+            android:visibility="gone"
+            android:background="#002db3"
+            android:text="Directions"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:typeface="serif"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

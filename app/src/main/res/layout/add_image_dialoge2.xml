@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <!-- <TextView
+         android:typeface="serif"
+         android:layout_margin="30dp"
+         android:gravity="center"
+         android:textSize="22sp"
+         android:textColor="#000000"
+         android:text="@string/select_image"
+         android:layout_width="match_parent"
+         android:textStyle="bold"
+         android:layout_height="wrap_content" />-->
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/galleryButton"
+        android:background="@drawable/button_bg"
+        android:typeface="serif"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:text="Select/Capture Image"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <Button
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/galleryButton2"
+        android:background="@drawable/button_bg"
+        android:typeface="serif"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:text="Remove Image"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--  <TextView
+          android:layout_margin="10dp"
+          android:gravity="center"
+          android:text="or"
+          android:typeface="serif"
+          android:textStyle="italic"
+          android:textColor="#000000"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />-->
+    <!--  <Button
+
+          android:layout_marginRight="30dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginBottom="30dp"
+          android:id="@+id/cameraButton"
+          android:typeface="serif"
+          android:background="@drawable/button_bg"
+          android:textColor="#ffffff"
+          android:textAllCaps="false"
+          android:textSize="20sp"
+          android:textStyle="italic"
+          android:text="@string/camera"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />-->
+</LinearLayout>

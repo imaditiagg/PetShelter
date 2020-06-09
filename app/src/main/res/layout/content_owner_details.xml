@@ -1,0 +1,165 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".HomeActivity">
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:elevation="100dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/profilepic"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/user2"
+                        app:civ_shadow_radius="10"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/owner_name"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:typeface="serif"
+
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:background="@drawable/frame_background"
+                        android:padding="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:typeface="serif"
+                            android:text="Email"
+                            android:layout_gravity="top|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/owner_email"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:typeface="serif"
+
+                            android:maxLines="2"
+                            android:layout_gravity="bottom|left"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <Button
+                            android:id="@+id/email_owner_button"
+                            android:layout_gravity="right|end"
+                            android:background="@drawable/mail"
+                            android:layout_width="60dp"
+                            android:layout_height="55dp" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:background="@drawable/frame_background"
+                        android:padding="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:typeface="serif"
+                            android:text="Phone"
+                            android:layout_gravity="top|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/owner_contact"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:typeface="serif"
+                            android:layout_gravity="bottom|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/call_owner_button"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/call"
+                                android:layout_width="60dp"
+                                android:layout_height="55dp" />
+                            <Button
+                                android:id="@+id/msg_owner_button"
+                                android:background="@drawable/msg"
+                                android:layout_margin="5dp"
+                                android:layout_width="60dp"
+                                android:layout_height="55dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:background="@drawable/frame_background"
+                        android:padding="10dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:typeface="serif"
+                            android:text="Location"
+                            android:layout_gravity="top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/owner_location"
+                            android:layout_margin="5dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:typeface="serif"
+                            android:layout_gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="60dp"
+            android:id="@+id/ownerDetails_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_fileName="spinner.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>
